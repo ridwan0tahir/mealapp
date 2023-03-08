@@ -1,0 +1,112 @@
+@use "@/styles/partials/variables" as var;
+/*
+*  Container Width
+*/
+@mixin width($value: 90%) {
+  width: $value;
+  margin: 0 auto;
+}
+
+@mixin mainHeight {
+  min-height: calc(100vh - var.$header_height);
+}
+
+/*
+*   Flex Container
+*/
+%flexShared {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexMain($gap: 0rem) {
+  @extend %flexShared;
+  gap: $gap;
+}
+
+@mixin flexCenter($direction: row, $gap: 0rem) {
+  @include flexMain($gap);
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin flexBetween($direction: row, $gap: 0rem) {
+  @include flexMain($gap);
+  justify-content: space-between;
+  flex-direction: $direction;
+}
+
+/*
+ *  Typography
+*/
+
+@mixin heading1 {
+  font-family: var.$ff_cormorant;
+  font-size: var.$fs_23;
+  font-weight: var.$fw_700;
+  line-height: var.$lh_23;
+  color: var.$white_01;
+}
+
+@mixin subHeading1 {
+  font-family: var.$ff_cormorant;
+  font-size: var.$fs_64;
+  font-weight: var.$fw_600;
+  line-height: var.$lh_64;
+  color: var.$gold_02;
+}
+
+@mixin subHeading2 {
+  font-family: var.$ff_cormorant;
+  font-size: var.$fs_45;
+  font-weight: var.$fw_600;
+  line-height: var.$lh_45;
+  color: var.$gold_02;
+}
+
+@mixin subHeading3 {
+  font-family: var.$ff_cormorant;
+  font-size: var.$fs_32;
+  font-weight: var.$fw_400;
+  line-height: var.$lh_32;
+  color: var.$gold_02;
+}
+
+@mixin body {
+  font-family: var.$ff_open;
+  font-size: var.$fs_16;
+  font-weight: var.$fw_400;
+  line-height: var.$lh_16;
+  color: var.$white_03;
+}
+
+/*
+*   Buttons
+*/
+
+@mixin btnPrimary {
+  border: 1px solid transparent;
+  background-color: var.$gold_02;
+  color: var.$dark_01;
+  padding: 0.5rem 2rem;
+  font-family: var.$ff_cormorant;
+  font-size: var.$fs_16;
+  line-height: var.$lh_16;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: rgba($color: var.$gold_01, $alpha: 0.1);
+    border-color: var.$gold_01;
+    color: var.$gold_01;
+  }
+}
+
+@mixin input {
+  padding: 1rem 1.125rem;
+  background-color: transparent;
+  color: var.$gold_01;
+  border: 1px solid var.$gold_01;
+  font-family: var.$ff_cormorant;
+  font-size: var.$fs_16;
+  line-height: var.$lh_16;
+}

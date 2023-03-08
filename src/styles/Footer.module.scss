@@ -1,0 +1,137 @@
+@use "@/styles/partials/mixins" as mx;
+@use "@/styles/partials/variables" as var;
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  row-gap: 8rem;
+  padding: 5rem 0;
+  text-align: center;
+  background: linear-gradient(
+      180deg,
+      rgba($color: var.$dark_01, $alpha: 1) 20%,
+      rgba($color: var.$dark_01, $alpha: 0.6) 80%
+    ),
+    url("/bg.jpg");
+  background-size: cover;
+
+  .newsletter {
+    grid-column: 3 / span 9;
+    @include mx.flexMain(var.$sp_32);
+    flex-direction: column;
+    padding: 4rem;
+    border: 1px solid hsla(47, 55%, 70%, 0.2);
+    box-shadow: 22px 30px 95px 1px hsla(0, 0%, 0%, 0.7);
+    background-color: var.$dark_02;
+
+    .intro {
+      margin-bottom: var.$sp_32;
+
+      h5 {
+        @include mx.heading1;
+        margin-bottom: var.$sp_8;
+
+        .icon {
+          display: block;
+          margin: var.$sp_8 auto 0 auto;
+        }
+      }
+
+      h2 {
+        @include mx.subHeading1;
+        margin-bottom: var.$sp_24;
+      }
+    }
+
+    .subscribe {
+      @include mx.flexMain(var.$sp_32);
+      width: 70%;
+
+      input[type="email"] {
+        @include mx.input;
+        flex: 1;
+      }
+
+      button {
+        @include mx.btnPrimary;
+      }
+    }
+  }
+
+  .info {
+    grid-column: 3 / span 9;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    column-gap: 4rem;
+
+    .address {
+      grid-column: 1 / span 3;
+
+      h4 {
+        @include mx.subHeading3;
+        margin-bottom: var.$sp_24;
+      }
+
+      p {
+        margin-bottom: var.$sp_8;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .business {
+      grid-column: 5 / span 5;
+
+      h4 {
+        @include mx.subHeading1;
+        margin-bottom: var.$sp_32;
+        text-transform: uppercase;
+      }
+
+      .icon {
+        display: block;
+        margin: var.$sp_16 auto 0 auto;
+        margin-bottom: var.$sp_16;
+      }
+
+      .socialList {
+        @include mx.flexCenter($gap: var.$sp_16);
+
+        li svg {
+          cursor: pointer;
+
+          &:hover {
+            fill: var.$gold_02;
+          }
+        }
+      }
+    }
+
+    .workingHours {
+      grid-column: 11 / span 3;
+
+      h4 {
+        @include mx.subHeading3;
+        margin-bottom: var.$sp_24;
+      }
+
+      p {
+        margin-bottom: var.$sp_8;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & > label {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .addendum {
+    grid-column: 3 / span 9;
+    line-height: 2rem;
+  }
+}

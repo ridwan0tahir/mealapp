@@ -1,0 +1,43 @@
+@use "@/styles/partials/mixins" as mx;
+@use "@/styles/partials/variables" as var;
+
+.header {
+  height: var.$header_height;
+  padding: 2rem 0;
+  color: var.$white_01;
+}
+
+.navbar {
+  @include mx.width;
+  @include mx.flexBetween;
+}
+
+.logo {
+  font-family: var.$ff_cormorant;
+  font-weight: var.$fw_700;
+  font-size: 2.75rem;
+  line-height: 3.575rem;
+}
+
+.mainNavList {
+  @include mx.flexMain(var.$sp_32);
+}
+
+.otherNavList {
+  @include mx.flexMain;
+  font-weight: var.$fw_600;
+
+  & .navItem:first-child {
+    padding-right: var.$sp_16;
+    border-right: 1px solid;
+    // border-image-source: radial-gradient(
+    //   50% 50% at 50% 50%,
+    //   red 58.85%,
+    //   rgba(255, 255, 255, 0) 100%
+    // );
+  }
+
+  & .navItem:last-child {
+    padding-left: var.$sp_16;
+  }
+}

@@ -1,0 +1,43 @@
+@use "@/styles/partials/variables" as var;
+@use "@/styles/partials/mixins" as mx;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background: var.$dark_01;
+  @include mx.body;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  background: none;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}

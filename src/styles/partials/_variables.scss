@@ -1,0 +1,58 @@
+/*
+*   Typography
+*/
+
+//  Font Family
+$ff_open: "Open Sans", sans-serif;
+$ff_cormorant: "Cormorant Upright", serif;
+
+//  Font Sizes
+$fs_16: 1rem;
+$fs_18: 1.125rem;
+$fs_23: 1.4375rem;
+$fs_32: 2rem;
+$fs_45: 2.8125rem;
+$fs_64: 4rem;
+$fs_90: 5.625rem;
+
+// Font Weight
+$fw_400: 400;
+$fw_500: 500;
+$fw_600: 600;
+$fw_700: 700;
+
+// Line Height
+$lh_16: 1.75rem;
+$lh_18: 1.96875rem;
+$lh_23: 1.86875rem;
+$lh_32: 2.6rem;
+$lh_45: 3.65625rem;
+$lh_64: 5.2rem;
+$lh_90: 7.3125rem;
+
+/*
+*   Spaces
+*/
+$sp_8: 0.5rem;
+$sp_16: 1rem;
+$sp_24: 1.5rem;
+$sp_32: 2rem;
+$sp_48: 3rem;
+$sp_50: 3.125rem;
+$sp_64: 4rem;
+$sp_85: 5.3125rem;
+
+$header_height: 7.5625rem;
+
+/*
+*   Colors
+*/
+$white_01: hsla(0, 0%, 100%, 1);
+$white_02: hsla(0, 0%, 98%, 1);
+$white_03: hsla(0, 0%, 67%, 1);
+
+$dark_01: hsla(45, 20%, 4%, 1);
+$dark_02: hsla(0, 0%, 5%, 1);
+
+$gold_01: hsla(46, 57%, 91%, 1);
+$gold_02: hsla(47, 55%, 70%, 1);
