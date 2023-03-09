@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   row-gap: 8rem;
-  padding: 5rem 0;
+  padding-bottom: 5rem;
   text-align: center;
   background: linear-gradient(
       180deg,
@@ -27,7 +27,7 @@
     .intro {
       margin-bottom: var.$sp_32;
 
-      h5 {
+      h5:nth-child(1) {
         @include mx.heading1;
         margin-bottom: var.$sp_8;
 

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import PropTypes from "prop-types";
 import style from "@/styles/Home.module.scss";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={style.main}>Home</main>
+      <main className={style.main}>
+        <Contact />
+      </main>
     </>
   );
 }
