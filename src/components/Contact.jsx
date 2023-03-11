@@ -7,9 +7,8 @@ export default function Contact() {
   return (
     <section className={style.contact}>
       <article className={style.content}>
-        <h5>
-          Contact <Spoon className={style.icon} />
-        </h5>
+        <h5>Contact</h5>
+        <Spoon className={style.icon} />
         <h2>Find Us</h2>
         <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
         <h5>Opening Hours</h5>

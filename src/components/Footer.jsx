@@ -9,9 +9,8 @@ export default function Footer() {
     <footer className={style.footer}>
       <section className={style.newsletter}>
         <article className={style.intro}>
-          <h5>
-            Newsletter <Spoon className={style.icon} />
-          </h5>
+          <h5>Newsletter</h5>
+          <Spoon className={style.icon} />
           <h2>Subscribe to Our Newsletter</h2>
           <p>And never miss latest Updates!</p>
         </article>
@@ -55,9 +54,7 @@ export default function Footer() {
         </article>
 
         <article className={style.workingHours}>
-          <h4 h3 className={style.header3}>
-            Working Hours
-          </h4>
+          <h4 className={style.header3}>Working Hours</h4>
           <p id="weekdays">
             <label htmlFor="weekdays">Monday-Friday:</label>
             08:00 am -12:00 am

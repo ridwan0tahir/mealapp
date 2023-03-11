@@ -1,26 +1,17 @@
 @use "@/styles/partials/mixins" as mx;
 @use "@/styles/partials/variables" as var;
 
-.contact {
-  grid-column: 1 / span 10;
+.chef {
+  grid-column: 1 / span 13;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  background: linear-gradient(
-      270deg,
-      rgba($color: var.$dark_01, $alpha: 1) 20%,
-      rgba($color: var.$dark_01, $alpha: 0.6) 80%
-    ),
-    url("/bg.jpg");
-  background-size: cover;
+  grid-template-columns: repeat(13, 1fr);
   padding: 8rem 0;
-  position: relative;
-  top: 1rem;
 
   .content {
-    grid-column: 3 / span 4;
+    grid-column: 8 / span 4;
     align-self: center;
 
-    h5:nth-of-type(1) {
+    h5 {
       @include mx.heading1;
       margin-bottom: var.$sp_8;
     }
@@ -35,30 +26,37 @@
       margin-bottom: var.$sp_64;
     }
 
-    p:nth-of-type(1) {
-      margin-bottom: var.$sp_32;
+    q {
+      display: block;
+      margin-bottom: var.$sp_64;
+
+      &::first-letter {
+        font-size: 1rem;
+      }
     }
 
-    h5:nth-of-type(2) {
-      @include mx.heading1;
-      margin-bottom: var.$sp_16;
+    h3 {
+      @include mx.subHeading3;
+      margin-bottom: var.$sp_8;
     }
 
-    p:nth-of-type(2) {
-      margin-bottom: var.$sp_16;
+    p {
+      margin-bottom: var.$sp_64;
     }
 
-    .btn {
-      @include mx.btnPrimary;
-      margin-top: var.$sp_64;
+    .sign {
+      font-family: var.$ff_best;
+      font-size: var.$fs_64;
+      font-weight: var.$fw_600;
+      line-height: var.$lh_64;
+      color: var.$white_03;
     }
   }
 
   .imgContainer {
-    grid-column: 7 / span 5;
+    grid-column: 3 / span 4;
     height: 44.5rem;
     position: relative;
-    left: 25%;
 
     img {
       object-fit: cover;

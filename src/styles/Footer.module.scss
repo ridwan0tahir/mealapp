@@ -30,11 +30,11 @@
       h5:nth-child(1) {
         @include mx.heading1;
         margin-bottom: var.$sp_8;
+      }
 
-        .icon {
-          display: block;
-          margin: var.$sp_8 auto 0 auto;
-        }
+      .icon {
+        display: block;
+        margin: 0 auto var.$sp_8 auto;
       }
 
       h2 {

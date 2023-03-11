@@ -14,6 +14,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.cdnfonts.com/css/bestermind"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

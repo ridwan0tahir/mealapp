@@ -1,0 +1,17 @@
+// @use "@/styles/partials/mixins" as mx;
+@use "@/styles/partials/variables" as var;
+
+.video {
+  grid-column: 1 / span 14;
+
+  .imgContainer {
+    max-height: 46rem;
+    height: 70vh;
+    position: relative;
+
+    img {
+      object-fit: cover;
+      //   padding: var.$sp_24;
+    }
+  }
+}

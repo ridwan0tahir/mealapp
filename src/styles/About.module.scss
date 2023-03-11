@@ -1,0 +1,75 @@
+@use "@/styles/partials/mixins" as mx;
+@use "@/styles/partials/variables" as var;
+
+.about {
+  grid-column: 1 / span 13;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  column-gap: 3rem;
+  background: linear-gradient(
+      270deg,
+      rgba($color: var.$dark_01, $alpha: 0.6) 50%,
+      rgba($color: var.$dark_01, $alpha: 0.6) 50%
+    ),
+    url("/bg.jpg");
+  background-size: cover;
+  padding: 8rem 0;
+
+  .contentLeft {
+    grid-column: 3 / span 4;
+    align-self: center;
+    text-align: right;
+
+    h2 {
+      @include mx.subHeading1;
+      margin-bottom: var.$sp_8;
+    }
+
+    .icon {
+      display: block;
+      margin-bottom: var.$sp_32;
+      margin-left: auto;
+    }
+
+    p {
+      margin-bottom: var.$sp_32;
+    }
+
+    .btn {
+      @include mx.btnPrimary;
+    }
+  }
+
+  .imgContainer {
+    grid-column: 7 / span 1;
+    height: 44.5rem;
+    position: relative;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .contentRight {
+    grid-column: 8 / span 4;
+    align-self: center;
+
+    h2 {
+      @include mx.subHeading1;
+      margin-bottom: var.$sp_8;
+    }
+
+    .icon {
+      display: block;
+      margin-bottom: var.$sp_32;
+    }
+
+    p {
+      margin-bottom: var.$sp_32;
+    }
+
+    .btn {
+      @include mx.btnPrimary;
+    }
+  }
+}
