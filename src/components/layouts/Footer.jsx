@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import style from "@/styles/Footer.module.scss";
-import Spoon from "@/components/Spoon";
+import Spoon from "@/components/icons/Spoon";
 
 export default function Footer() {
   return (

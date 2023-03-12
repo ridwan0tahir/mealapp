@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Spoon from "@/components/Spoon";
+import Spoon from "@/components/icons/Spoon";
 import style from "@/styles/Chef.module.scss";
 import Pic from "@/assets/rc.png";
 

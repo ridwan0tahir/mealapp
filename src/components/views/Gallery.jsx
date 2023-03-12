@@ -1,5 +1,5 @@
 import style from "@/styles/Gallery.module.scss";
-import Spoon from "@/components/Spoon";
+import Spoon from "@/components/icons/Spoon";
 import Pic1 from "@/assets/cala.png";
 import Pic2 from "@/assets/coquet.png";
 import Pic3 from "@/assets/blackwell.png";

@@ -1,13 +1,14 @@
 import Head from "next/head";
 import PropTypes from "prop-types";
 import style from "@/styles/Home.module.scss";
-import Contact from "@/components/Contact";
-import Gallery from "@/components/Gallery";
-import Hero from "@/components/Hero";
-import Chef from "@/components/Chef";
-import About from "@/components/About";
-import Menu from "@/components/Menu";
-import Video from "@/components/Video";
+import Contact from "@/components/views/Contact";
+import Gallery from "@/components/views/Gallery";
+import Hero from "@/components/views/Hero";
+import Chef from "@/components/views/Chef";
+import About from "@/components/views/About";
+import Menu from "@/components/views/Menu";
+import Video from "@/components/views/Video";
+import Award from "@/components/views/Award";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Menu />
         <Chef />
         <Video />
+        <Award />
         <Gallery />
         <Contact />
       </main>

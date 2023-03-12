@@ -7,12 +7,12 @@
   grid-template-columns: repeat(13, 1fr);
   column-gap: 3rem;
   background: linear-gradient(
-      270deg,
-      rgba($color: var.$dark_01, $alpha: 0.6) 50%,
-      rgba($color: var.$dark_01, $alpha: 0.6) 50%
+      180deg,
+      rgba($color: var.$dark_01, $alpha: 0.8) 30%,
+      rgba($color: var.$dark_01, $alpha: 0.7) 50%
     ),
-    url("/bg.jpg");
-  background-size: cover;
+    url("/G.png") no-repeat center, url("/bg.jpg") no-repeat center;
+  background-size: cover, 390px 415px, cover;
   padding: 8rem 0;
 
   .contentLeft {

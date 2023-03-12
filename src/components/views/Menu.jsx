@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Spoon from "@/components/Spoon";
+import Spoon from "@/components/icons/Spoon";
 import Pic from "@/assets/shaker.png";
 import style from "@/styles/Menu.module.scss";
 import MenuConfigs from "@/configs/MenuConfig";

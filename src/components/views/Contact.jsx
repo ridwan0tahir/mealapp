@@ -1,5 +1,5 @@
 import style from "@/styles/Contact.module.scss";
-import Spoon from "@/components/Spoon";
+import Spoon from "@/components/icons/Spoon";
 import Pic from "@/assets/glassdrink.png";
 import Image from "next/image";
 
