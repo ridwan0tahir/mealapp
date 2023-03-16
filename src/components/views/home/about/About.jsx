@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Spoon from "@/components/icons/Spoon";
-import style from "@/styles/About.module.scss";
 import Pic from "@/assets/knife.png";
+import style from "@/components/views/home/about/About.module.scss";
 
 export default function About() {
   return (

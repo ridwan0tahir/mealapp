@@ -1,9 +1,9 @@
 import Image from "next/image";
+import { Fragment } from "react";
 import Spoon from "@/components/icons/Spoon";
 import Pic from "@/assets/shaker.png";
-import style from "@/styles/Menu.module.scss";
 import MenuConfigs from "@/configs/MenuConfig";
-import { Fragment } from "react";
+import style from "@/components/views/home/menu//Menu.module.scss";
 
 export default function Menu() {
   const { BeerConfigs, CocktailConfigs } = MenuConfigs;

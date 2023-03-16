@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Spoon from "@/components/icons/Spoon";
-import style from "@/styles/Hero.module.scss";
 import Pic from "@/assets/khloe.png";
+import style from "@/components/views/home/hero/Hero.module.scss";
 
 export default function Hero() {
   return (

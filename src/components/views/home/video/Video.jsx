@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Pic from "@/assets/jason.png";
-import style from "@/styles/Video.module.scss";
+import style from "@/components/views/home/video/Video.module.scss";
 
 export default function Video() {
   return (

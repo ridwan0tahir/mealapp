@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Spoon from "@/components/icons/Spoon";
 import Pic from "@/assets/mgg.png";
-import style from "@/styles/Award.module.scss";
 import AwardConfigs from "@/configs/AwardConfig";
 import G from "@/components/icons/G";
+import style from "@/components/views/home/award/Award.module.scss";
 
 export default function Award() {
   return (

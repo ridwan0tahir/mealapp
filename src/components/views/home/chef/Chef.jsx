@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Spoon from "@/components/icons/Spoon";
-import style from "@/styles/Chef.module.scss";
 import Pic from "@/assets/rc.png";
+import style from "@/components/views/home/chef/Chef.module.scss";
 
 export default function Chef() {
   return (

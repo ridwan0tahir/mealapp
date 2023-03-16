@@ -1,7 +1,7 @@
-import style from "@/styles/Contact.module.scss";
+import Image from "next/image";
 import Spoon from "@/components/icons/Spoon";
 import Pic from "@/assets/glassdrink.png";
-import Image from "next/image";
+import style from "@/components/views/home/contact/Contact.module.scss";
 
 export default function Contact() {
   return (

@@ -1,7 +1,7 @@
 const NavConfigs = {
   MainNavConfigs: [
     { name: "Home", href: "/" },
-    { name: "Blogs", href: "/blog" },
+    { name: "Menu", href: "/menu" },
     { name: "About Us", href: "/about" },
     { name: "Contact Us", href: "/contact" },
   ],

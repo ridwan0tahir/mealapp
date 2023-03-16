@@ -1,0 +1,48 @@
+@use "@/styles/partials/mixins" as mx;
+@use "@/styles/partials/variables" as var;
+
+.hero {
+  grid-column: 1 / span 13;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  padding-bottom: 8rem;
+
+  .content {
+    grid-column: 3 / span 4;
+    align-self: center;
+
+    .icon {
+      display: block;
+      margin-bottom: var.$sp_8;
+    }
+
+    h2 {
+      @include mx.subHeading2;
+      margin-bottom: var.$sp_8;
+    }
+
+    p {
+      margin-top: var.$sp_32;
+    }
+
+    .btnContainer {
+      @include mx.flexMain(2rem);
+      margin-top: var.$sp_64;
+
+      button {
+        @include mx.btnPrimary;
+      }
+    }
+  }
+
+  .imgContainer {
+    grid-column: 7 / span 5;
+    height: 34.5rem;
+    position: relative;
+
+    img {
+      object-fit: contain;
+      object-position: center right;
+    }
+  }
+}
